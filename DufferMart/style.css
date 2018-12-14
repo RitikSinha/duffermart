@@ -1,0 +1,31 @@
+.navbar {
+    border-bottom: #008ed6 3px solid;
+    opacity: 0.8;
+  }
+
+
+
+#canvas {
+    margin:auto;
+    background: #ececec;
+    width: 100%;
+}
+
+.btn-disabled{
+    color:#000 !important;
+    background-color: #fff !important;
+}
+
+#footer{
+    margin-top:50px;
+}
+
+li {
+    float:left;
+}
+
+li a.lnk{
+    display:block;
+    padding-right: 16px;
+    padding-bottom: -16px;
+}

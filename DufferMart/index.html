@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://bootswatch.com/4/cosmo/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>DufferMart</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark  mb-5" id="main-nav">
+        <div class="container">
+          <a href="index.html" class="navbar-brand">DufferaMart</a>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="#home" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#explore-head-section" class="nav-link">Explore</a>
+              </li>
+              <li class="nav-item">
+                <a href="#create-head-section" class="nav-link">About us</a>
+              </li>
+              <li class="nav-item">
+                <a href="#share-head-section" class="nav-link">Share</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 mp-10 m-auto">
+                <div class="custom-file mb-3">
+                    <input type="file" class="custom-file-input" id="upload-file">
+                    <label for="upload-file" class="custom-file-label">Choose Image</label>
+                </div>
+
+                <canvas id="canvas"></canvas>
+
+                <h4 class="text-center my-3">Filters</h4>
+
+                <div class="row text-center my-6">
+                    <div class="col-md-2 my-3">
+                        <div class="btn-group btn-group-sm">
+                            <button class="filter-btn brightness-remove btn btn-primary">-</button>
+                            <button class="btn btn-info btn-disabled">Brightness</button>
+                            <button class="filter-btn brightness-add btn btn-primary">+</button>
+                        </div>
+                    </div>
+                    <div class="col-md-2 my-3">
+                        <div class="btn-group btn-group-sm">
+                            <button class="filter-btn contrast-remove btn btn-primary">-</button>
+                            <button class="btn btn-info btn-disabled">Contrast</button>
+                            <button class="filter-btn contrast-add btn btn-primary">+</button>
+                        </div>
+                    </div>
+                    <div class="col-md-2 my-3">
+                        <div class="btn-group btn-group-sm">
+                            <button class="filter-btn saturation-remove btn btn-primary">-</button>
+                            <button class="btn btn-info btn-disabled">Saturation</button>
+                            <button class="filter-btn saturation-add btn btn-primary">+</button>
+                        </div>
+                    </div>
+                    <div class="col-md-2 my-3">
+                        <div class="btn-group btn-group-sm">
+                            <button class="filter-btn vibrance-remove btn btn-primary">-</button>
+                            <button class="btn btn-info btn-disabled">Vibrance</button>
+                            <button class="filter-btn vibrance-add btn btn-primary">+</button>
+                        </div>
+                    </div>
+                    <div class="col-md-2 my-3">
+                        <div class="btn-group btn-group-sm">
+                            <button class="filter-btn exposure-remove btn btn-primary">-</button>
+                            <button class="btn btn-info btn-disabled">Exposure</button>
+                            <button class="filter-btn exposure-add btn btn-primary">+</button>
+                        </div>
+                    </div>
+                    <div class="col-md-2 my-3">
+                        <div class="btn-group btn-group-sm">
+                            <button class="filter-btn stackblur-remove btn btn-primary">-</button>
+                            <button class="btn btn-info btn-disabled">Stack Blur</button>
+                            <button class="filter-btn stackblur-add btn btn-primary">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="text-center my-3">Effects</h4>
+
+                <div class="row mb-3">
+                    <div class="col-md-3">
+                        <button class="filter-btn vintage-add btn btn-success btn-block">Vintage</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="filter-btn lomo-add btn btn-success btn-block">Lomo</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="filter-btn clarity-add btn btn-success btn-block">Clarity</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="filter-btn sincity-add btn btn-success btn-block">Sin City</button>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-3">
+                        <button class="filter-btn crossprocess-add btn btn-success btn-block">Cross Process</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="filter-btn pinhole-add btn btn-success btn-block">Pinhole</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="filter-btn nostalgia-add btn btn-success btn-block">Nostalgia</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="filter-btn hermajesty-add btn btn-success btn-block">Her Majesty</button>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-3">
+                        <button class="filter-btn love-add btn btn-success btn-block">Love</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="filter-btn orangepeel-add btn btn-success btn-block">Orange Sun</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="filter-btn glowingsun-add btn btn-success btn-block">Glowing Sun</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="filter-btn sunrise-add btn btn-success btn-block">Sunrise</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <button id="download-btn" class="btn btn-dark btn-block">Download Image</button>
+                    </div>
+                    <div class="col-md-6">
+                        <button id="revert-btn" class="btn btn-danger btn-block">Remove Filters</button>
+                    </div>
+                </div>
+
+                <footer id="footer">
+                    <ul class="list-unstyled">
+                        <li><a class="lnk" href="https://www.github.com/ritikSinha">Github</a></li>
+                        <li><a class="lnk" href="https://www.instagram.com/logic_beard">Instagram</a></li>
+                    </ul>
+                    <br><br><br>
+                    <p>powered by <a href="http://www.logicbeard.com">logicbeard</a></p>
+                </footer>
+            </div>   
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.1.2/caman.full.min.js"></script>
+    <script src="./main.js"></script>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+
+    <script>
+        // Get the current year for the copyright
+        $('#year').text(new Date().getFullYear());
+    
+        // Init Scrollspy
+        $('body').scrollspy({ target: '#main-nav' });
+    
+        // Smooth Scrolling
+        $("#main-nav a").on('click', function (event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+    
+            const hash = this.hash;
+    
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function () {
+    
+              window.location.hash = hash;
+            });
+          }
+        });
+      </script>
+</body>
+</html>
